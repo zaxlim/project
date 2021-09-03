@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>DAD</title>
+  </head>
+  <body onload="getFromParent()">
+    <h2>Hey Mama</h2>
+    <img src="dad.png" height="80" width="80" id="logo">
+    <div class="container">
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Funds <br> disbursed</h4>
+          <p id="deposit" class="money plus">+$670.00</p>
+        </div>
+        <div>
+          <h4>Completed contracts</h4>
+          <p id="loan" class="money minus">23</p>
+        </div>
+      </div>
+
+
+      <h3>Open requests</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+      </ul>
+
+      <div class="feature">
+        <div style="text-align:left;">
+          <span class="font-header">Create Request</p>
+        </div>
+        <div style="text-align:right;">
+          <span class="icon material-icons plus-btn" onclick="createContract()">&#xE147;</span>
+        </div>
+      </div>
+      <form id="form">
+        <div class="form-control">   
+          <input type="text" id="contract_desc" placeholder="contract description" />
+          <input type="text" id="contract_value" placeholder="contract value" />
+          <select id="child_select" name="child_select">
+            <option value="1">Ben</option>
+            <option value="4">Ming En</option>
+            <option value="6">Nelly</option>
+            <option value="9">Sasha</option>
+          </select>
+        </div>
+       
+        <div class="form-control">
+          <div class="mypanel"></div>
+        </div>
+       
+      </form>
+    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+

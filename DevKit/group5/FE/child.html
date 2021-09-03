@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>DAD</title>
+  </head>
+  <body onload="getFromChild()">
+    <h2>My Contracts</h2>
+    <img src="dad.png" height="80" width="80" id="logo">
+    <div class="container">
+
+      <div class="inc-exp-container">
+        <div>
+          <h4>Earnings <br> to date</h4>
+          <p id="deposit" class="money plus">+$150.50</p>
+        </div>
+        <div>
+          <h4>Completed contracts</h4>
+          <p id="loan" class="money minus">8</p>
+        </div>
+      </div>
+      <!--  <h4>Your Balance</h4>
+      <h1 id="balance">$0.00</h1>
+
+      <div class="inc-exp-container">
+        <canvas id="myChart"></canvas>
+      </div>
+      <!--<div style="visibility: hidden;">
+        <div>
+          <h4>Deposit</h4>
+          <p id="deposit" class="money plus">+$0.00</p>
+        </div>
+        <div>
+          <h4>Loan</h4>
+          <p id="loan" class="money minus">-$0.00</p>
+        </div>
+      </div>-->
+
+      <h3>Open Contracts</h3>
+      <ul id="list" class="list">
+        <!-- <li class="minus">
+          Cash <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+      </ul> 
+      <div class="feature">
+        <div style="text-align:left;">
+          <span class="font-header">Create Request</p>
+        </div>
+        <div style="text-align:right;">
+          <span class="icon material-icons plus-btn" onclick="createContract()">&#xE147;</span>
+        </div>
+      </div>
+      <form id="form">
+        <div class="form-control">   
+          <input type="text" id="contract_desc" placeholder="contract description" />
+          <input type="text" id="contract_value" placeholder="contract value" />
+        </div>
+       
+        <div class="form-control">
+          <div class="mypanel"></div>
+        </div>
+       
+      </form>
+    
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

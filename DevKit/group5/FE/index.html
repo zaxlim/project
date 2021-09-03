@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+			<h1>Sign in</h1>
+      <br>
+      <form action="/login" method="POST">
+        <label for="email">Email address:</label>
+        <br>
+				<input id="text1" name="text1" type="text" required maxlength="50">
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+				<input id="pw" name="pw" type="password" required>
+        <br>
+        <input type="submit" value="Continue" class="btn">
+      </form>
+      <br>
+
+      <!--function is not active-->
+			<h1>Sign Up</h1>
+      <br>
+      <form action="submission.html" method="POST">
+        <label for="email">Email address:</label>
+        <br>
+				<input id="text1" name="text1" type="text" required maxlength="50">
+        <br>
+        <label for="pw">Password:</label>
+        <br>
+				<input id="pw" name="pw" type="password" required minlength="8" maxlength="15" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+        <br>
+        <input type="submit" value="Create account" class="btn">
+      </form>
+    </div>
+  </body>
+</html>
